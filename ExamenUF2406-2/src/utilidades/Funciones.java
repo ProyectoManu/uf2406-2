@@ -1,4 +1,11 @@
 package utilidades;
+/**
+ * 
+ * @author Manuel López
+ * 
+ * Clase que modela tres números y devuelve el número que está en medio de los
+ * dos
+ */
 
 public class Funciones {
 	
@@ -15,12 +22,16 @@ public class Funciones {
 		}
 		return enMedio;
 	}
-	
+	/**
+	 * Método accesor que devuelve un anyo.
+	 * @param visible boolean true para mostrarlo, false en caso contrario
+	 * @return anyo si es bisiesto.
+	 */
 
 	public boolean esBisiesto(int anyo) {
 		boolean bisiesto = false;
 		if (anyo <1700 || anyo >2500) {
-			throw new ArithmeticException("El a�o debe estar entre 1700 y 2500");
+			throw new ArithmeticException("El a�o debe estar entre 1700 y 2500");
 		}
 		if (anyo %4 == 0 ) {
 			if (anyo%100==0 && anyo%400!=0) {
